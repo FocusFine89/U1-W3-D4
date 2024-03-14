@@ -7,7 +7,7 @@ const main = document.querySelector("main");
 //Display Numeri
 for (let i = 0; i < 76; i++) {
   const numeroTombola = document.createElement("div");
-  numeroTombola.className = "numero-tombola";
+  numeroTombola.classList.add("numero-tombola");
   numeroTombola.innerText = i + 1;
   numeroTombola.value = i + 1;
   containerTombola.appendChild(numeroTombola);
@@ -28,8 +28,13 @@ const randomGenerator = () => {
   return randomNumber;
 };
 
+//collego il Numero casuale con la cella del numero
+const numeroTombola = document.querySelectorAll(".numero-tombola");
 rNumbersButton.onclick = (event) => {
-  randomGenerator();
+  const rNumGen = randomGenerator();
+  for (let i = 0; i < 76; i++) {
+    if (numeroTombola[i].value === rNumGen) {
+      numeroTombola[i].classList.add("casella-colorata");
+    }
+  }
 };
-
-const changeColor = () => {};

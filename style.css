@@ -38,6 +38,9 @@ main {
   box-shadow: 1px 1px 1px 1px;
 }
 
+.casella-colorata {
+  background-color: lightblue;
+}
 /* FINE MAIN */
 
 /* FOOTER */
