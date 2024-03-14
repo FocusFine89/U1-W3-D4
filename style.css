@@ -1,0 +1,44 @@
+/* GENERALE */
+* {
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* FINE GENERALE */
+
+/* MAIN */
+main {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.numero-tombola {
+  /* text-align: center; */
+  border: 1px solid black;
+  display: inline-block;
+  width: 9%;
+  margin: auto;
+  margin-left: -4px;
+  margin-bottom: 2px;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.numero-tombola:hover {
+  background-color: lightblue;
+}
+
+#random-number {
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 1.5em;
+  display: inline-block;
+}
+
+#random-number:hover {
+  box-shadow: 1px 1px 1px 1px;
+}
+
+/* FINE MAIN */
+
+/* FOOTER */
+/* FINE FOOTER */
